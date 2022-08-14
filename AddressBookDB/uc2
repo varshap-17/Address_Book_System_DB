@@ -1,0 +1,29 @@
+
+mysql> CREATE TABLE address_book(
+    -> firstname VARCHAR(50) NOT NULL,
+    -> lastname VARCHAR(50) NOT NULL,
+    -> address VARCHAR(50) NOT NULL,
+    -> city VARCHAR(20) NOT NULL,
+    -> state VARCHAR(30) NOT NULL,
+    -> zip VARCHAR(100) NOT NULL,
+    -> phone_no VARCHAR(100) NOT NULL,
+    -> email VARCHAR(100) NOT NULL
+    -> );
+Query OK, 0 rows affected (4.69 sec)
+
+mysql> describe address_book;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| firstname | varchar(50)  | NO   |     | NULL    |       |
+| lastname  | varchar(50)  | NO   |     | NULL    |       |
+| address   | varchar(50)  | NO   |     | NULL    |       |
+| city      | varchar(20)  | NO   |     | NULL    |       |
+| state     | varchar(30)  | NO   |     | NULL    |       |
+| zip       | varchar(100) | NO   |     | NULL    |       |
+| phone_no  | varchar(100) | NO   |     | NULL    |       |
+| email     | varchar(100) | NO   |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+8 rows in set (8.51 sec)
+
+mysql>
