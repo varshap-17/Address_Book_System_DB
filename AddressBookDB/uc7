@@ -1,0 +1,17 @@
+mysql> select count(state) from address_book;
++--------------+
+| count(state) |
++--------------+
+|            4 |
++--------------+
+1 row in set (0.48 sec)
+
+mysql> select count(city) from address_book;
++-------------+
+| count(city) |
++-------------+
+|           4 |
++-------------+
+1 row in set (0.00 sec)
+
+mysql>
