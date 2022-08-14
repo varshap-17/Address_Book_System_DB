@@ -1,0 +1,21 @@
+mysql> insert into address_book(firstname,lastname,type,address,city,state,zip,phone_no,email) values
+    -> ('Vedha','Karanth','friends','bk colony','delhi','UP','454','8880544523','vedha@gmail.com'),
+    -> ('Ansh','H','family','kamal puram','jnd','Karnataka','573202','9731445235','ansh@gmail.com');
+Query OK, 2 rows affected (0.10 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select * from address_book;
++-----------+----------+---------+-----------------+----------+-----------+--------+------------+-----------------+
+| firstname | lastname | type    | address         | city     | state     | zip    | phone_no   | email           |
++-----------+----------+---------+-----------------+----------+-----------+--------+------------+-----------------+
+| Varsha    | P        | friends | Hemavathi nagar | Hassan   | Karnataka | 573201 | 931634271  | var@gmail.com   |
+| Harsha    | Pandith  | family  | H B Colony      | Vizak    | Hydrabadh | 564    | 9448583480 | hars@gmail.com  |
+| Varsha    | P        | friends | Hemavathi nagar | Hassan   | Karnataka | 573201 | 931634271  | var@gmail.com   |
+| Harsha    | Pandith  | family  | H B Colony      | Vizak    | Hydrabadh | 564    | 9448583480 | hars@gmail.com  |
+| Bhuvi     | Kumar    | family  | Basavangudi     | Banglore | Karnataka | 4      | 8880549106 | bhu@gmail.com   |
+| Vedha     | Karanth  | friends | bk colony       | delhi    | UP        | 454    | 8880544523 | vedha@gmail.com |
+| Ansh      | H        | family  | kamal puram     | jnd      | Karnataka | 573202 | 9731445235 | ansh@gmail.com  |
++-----------+----------+---------+-----------------+----------+-----------+--------+------------+-----------------+
+7 rows in set (0.00 sec)
+
+mysql>
